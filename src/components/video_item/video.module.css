@@ -1,0 +1,33 @@
+.video {
+  flex-basis: 49%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0.5%;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px 0px rgba(191, 191, 191, 0.53);
+  transition: opacity 0.3s ease-out;
+}
+
+.video:hover {
+  opacity: 0.8;
+}
+
+.video .thumbnail {
+  width: 40%;
+}
+
+.video .metadata {
+  margin-left: 0.2em;
+}
+
+.video .metadata .title {
+  font-size: 0.8rem;
+  margin-bottom: 0.2em;
+}
+
+.video .metadata .channelTitle {
+  font-size: 0.6rem;
+  color: grey;
+}
