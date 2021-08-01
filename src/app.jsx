@@ -1,7 +1,10 @@
-import "./app.css";
+import React, { Component } from "react";
+import styles from "./app.module.css";
 
-function App() {
-  return <h1>Hello :)</h1>;
+class App extends Component {
+  render() {
+    return <div className={styles.app}>App</div>;
+  }
 }
 
 export default App;
