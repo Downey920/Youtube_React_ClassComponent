@@ -7,7 +7,7 @@ class Videos extends Component {
     return (
       <ul className={styles.videos}>
         {this.props.videos.map(video => (
-          <Video key={video.id} video={video} />
+          <Video key={video.id.videoId || video.id} video={video} />
         ))}
       </ul>
     );
