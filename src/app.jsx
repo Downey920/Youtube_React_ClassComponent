@@ -9,37 +9,20 @@ class App extends Component {
   };
 
   componentDidMount() {
-    const requestOptions = {
-      method: "GET",
-      redirect: "follow",
-    };
-
-    fetch(
-      "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=30&regionCode=KR&key=AIzaSyCLa7D2kMUdQtWa8wAj2hpWciL1ksrtSA8",
-      requestOptions
-    )
-      .then(response => response.json())
-      .then(result => this.setState({ videos: result.items }))
+    this.props.youtube
+      .mostPopular() //
+      .then(videos => this.setState({ videos }))
       .catch(error => console.log("error", error));
   }
 
-  handleSearch = input => {
-    const requestOptions = {
-      method: "GET",
-      redirect: "follow",
-    };
-
-    fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=video&maxResults=30&q=${input}&regionCode=KR&key=AIzaSyCLa7D2kMUdQtWa8wAj2hpWciL1ksrtSA8`,
-      requestOptions
-    )
-      .then(response => response.json())
-      .then(result => this.setState({ videos: result.items }))
+  handleSearch = query => {
+    this.props.youtube
+      .search(query)
+      .then(searchedVideos => this.setState({ videos: searchedVideos }))
       .catch(error => console.log("error", error));
   };
 
   render() {
-    console.log(this.state.videos);
     return (
       <div className={styles.app}>
         <Navbar onSearch={this.handleSearch} />
