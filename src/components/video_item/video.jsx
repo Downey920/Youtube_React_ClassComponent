@@ -2,10 +2,20 @@ import React, { Component } from "react";
 import styles from "./video.module.css";
 
 class Video extends Component {
+  handleDetail = () => {
+    this.props.onVideoClick(this.props.video);
+    window.scrollTo({ behavior: "smooth", top: 0 });
+  };
+
   render() {
     const snippet = this.props.video.snippet;
+    const displayType =
+      this.props.display === "list" ? styles.list : styles.grid;
     return (
-      <li className={styles.video}>
+      <li
+        className={`${styles.video} ${displayType}`}
+        onClick={this.handleDetail}
+      >
         <img
           src={snippet.thumbnails.medium.url}
           alt="Thumbnail"

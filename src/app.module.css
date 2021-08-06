@@ -2,3 +2,21 @@
   max-width: 80rem;
   margin: auto;
 }
+
+.content {
+  display: flex;
+}
+
+.content .videoDetail {
+  flex: 1 1 65%;
+}
+
+.content .videoList {
+  flex: 1 1 35%;
+}
+
+@media screen and (max-width: 57rem) {
+  .content {
+    flex-direction: column;
+  }
+}

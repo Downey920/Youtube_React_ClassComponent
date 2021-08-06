@@ -1,5 +1,4 @@
 .video {
-  flex-basis: 49%;
   display: flex;
   align-items: center;
   list-style: none;
@@ -8,6 +7,14 @@
   cursor: pointer;
   box-shadow: 3px 3px 5px 0px rgba(191, 191, 191, 0.53);
   transition: opacity 0.3s ease-out;
+}
+
+.video.list {
+  flex-basis: 100%;
+}
+
+.video.grid {
+  flex-basis: 49%;
 }
 
 .video:hover {
@@ -30,4 +37,10 @@
 .video .metadata .channelTitle {
   font-size: 0.6rem;
   color: grey;
+}
+
+@media screen and (max-width: 51rem) {
+  .video.grid {
+    flex-basis: 100%;
+  }
 }
