@@ -26,6 +26,14 @@ class Youtube {
     const result_1 = await response.json();
     return result_1.items;
   }
+
+  async comments(videoId) {
+    const response = await fetch(
+      `https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&part=replies&maxResults=20&order=relevance&textFormat=plainText&videoId=${videoId}&key=${this.key}`,
+      this.requestOptions
+    );
+    return await response.json();
+  }
 }
 
 export default Youtube;

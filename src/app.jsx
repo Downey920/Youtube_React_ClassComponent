@@ -8,6 +8,7 @@ class App extends Component {
   state = {
     videos: [],
     selectedVideo: null,
+    comments: [],
   };
 
   componentDidMount() {
@@ -27,10 +28,15 @@ class App extends Component {
   };
 
   handleDetail = selectedVideo => {
-    this.setState({ selectedVideo });
+    const seletedVideoId = selectedVideo.id.videoId || selectedVideo.id;
+    this.props.youtube
+      .comments(seletedVideoId) //
+      .then(result => this.setState({ comments: result.items, selectedVideo }))
+      .catch(error => console.log("error", error));
   };
 
   render() {
+    console.log(this.state.videos);
     const display = this.state.selectedVideo ? "list" : "grid";
     return (
       <div className={styles.app}>
@@ -38,7 +44,10 @@ class App extends Component {
         <section className={styles.content}>
           {this.state.selectedVideo && (
             <div className={styles.videoDetail}>
-              <VideoDetail selectedVideo={this.state.selectedVideo} />
+              <VideoDetail
+                selectedVideo={this.state.selectedVideo}
+                comments={this.state.comments}
+              />
             </div>
           )}
           <div className={styles.videoList}>

@@ -1,0 +1,85 @@
+li {
+  list-style: none;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1em;
+}
+
+.comment:first-child {
+  margin-top: 0.2em;
+}
+
+.profileImg {
+  width: 2.2rem;
+  border-radius: 50%;
+  margin-right: 0.8em;
+  margin-top: 0.1em;
+}
+
+.name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+
+.text {
+  margin-bottom: 0.4em;
+}
+
+.likes {
+  margin-right: 1em;
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.likeCnt {
+  margin-left: 0.4em;
+}
+
+.showMoreBtn {
+  font-size: 0.8rem;
+  color: blue;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-bottom: 0.4em;
+}
+
+.replies {
+}
+
+.reply {
+  display: flex;
+  align-items: flex-start;
+  margin: 1em;
+  font-size: 0.8rem;
+}
+
+.replyProfileImg {
+  width: 1.4rem;
+  border-radius: 50%;
+  margin-right: 0.8em;
+  margin-top: 0.2em;
+}
+
+.replyName {
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+
+.replyText {
+  margin-bottom: 0.4em;
+}
+
+.replyLikes {
+  margin-right: 1em;
+  color: gray;
+  font-size: 0.7rem;
+}
+
+.replyLikeCnt {
+  margin-left: 0.4em;
+}

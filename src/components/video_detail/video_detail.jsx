@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Comment from "../comment/comment";
 import styles from "./video_detail.module.css";
 
 class VideoDetail extends Component {
@@ -25,6 +26,12 @@ class VideoDetail extends Component {
           </span>
           <pre className={styles.description}>{snippet.description}</pre>
         </div>
+
+        <ul className={styles.comments}>
+          {this.props.comments.map(comment => (
+            <Comment key={comment.id} comment={comment} />
+          ))}
+        </ul>
       </div>
     );
   }
