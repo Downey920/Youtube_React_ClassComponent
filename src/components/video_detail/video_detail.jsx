@@ -28,9 +28,10 @@ class VideoDetail extends Component {
         </div>
 
         <ul className={styles.comments}>
-          {this.props.comments.map(comment => (
-            <Comment key={comment.id} comment={comment} />
-          ))}
+          {this.props.comments &&
+            this.props.comments.map(comment => (
+              <Comment key={comment.id} comment={comment} />
+            ))}
         </ul>
       </div>
     );

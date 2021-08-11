@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import styles from "./video.module.css";
 
-class Video extends Component {
+class Video extends PureComponent {
   handleDetail = () => {
     this.props.onVideoClick(this.props.video);
     window.scrollTo({ behavior: "smooth", top: 0 });

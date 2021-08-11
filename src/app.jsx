@@ -36,7 +36,6 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state.videos);
     const display = this.state.selectedVideo ? "list" : "grid";
     return (
       <div className={styles.app}>
