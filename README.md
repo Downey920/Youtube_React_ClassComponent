@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Youtube Clone with React (Class Component)
+Demo Link : https://youtube-react-na.netlify.app/
+___
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🔗 Index
 
-## Available Scripts
+1. [Purpose of this project](#1-purpose-of-this-project)
+2. [Tech Stack](#2-tech-stack)
+3. [Over View](#3-over-view)
+4. [About Project](#4-about-project)
 
-In the project directory, you can run:
+## 1. Purpose of this project
 
-### `yarn start`
+- Implementing app using react
+- Learning about Public APIs
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 2. Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- <img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
+- <img alt="React" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
+- <img alt="Postman" src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=red" />
 
-### `yarn test`
+## 3. Over View
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 메인화면
+>Youtube Data APIs를 통해 현재 유튜브에서 가장 조회수가 많은 영상들이 업로드된 상태의 화면 (KR region)
 
-### `yarn build`
+![메인화면](https://user-images.githubusercontent.com/71444930/129156321-5308e47b-2a66-4a21-b25d-0a104e73c136.gif)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Detail화면 (Video & Comments)
+![Detail](https://user-images.githubusercontent.com/71444930/129161320-84fe619b-57ce-4e7b-9ab3-d0b5794c6564.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 검색
+![검색](https://user-images.githubusercontent.com/71444930/129162256-417a226d-4170-4630-bf5d-fd000d7d8c96.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 4. About Project
+- 모든 페이지 반응형으로 구현
+- SPA
+- PostCSS 사용
+- ClassComponent로 구현
